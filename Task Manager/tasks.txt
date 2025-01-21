@@ -1,0 +1,3 @@
+1|Homework|Math HW|Mon Jan 20 16:22:42 2025|1
+3|Shopping|grocery shopping|Mon Jan 20 16:23:47 2025|1
+4|Gym|Cardio|Mon Jan 20 16:24:07 2025|0

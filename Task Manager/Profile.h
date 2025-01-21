@@ -1,31 +1,27 @@
-#include <iostream>
-#include <string>
-#include <iomanip>
-using namespace std;
-
 #ifndef PROFILE_H
 #define PROFILE_H
 
+#include <string>
+using namespace std;
 
 class Profile {
-private:
-    string name;       // User's name
-    string email;      // User's email
-
 public:
-    // Constructor
+    //Profile();
     Profile(const string& name = "Guest", const string& email = "");
 
-    // Getters
     string GetName() const;
     string GetEmail() const;
 
-    // Setters
     void SetName(const string& name);
     void SetEmail(const string& email);
 
-    // Display Profile Information
     void DisplayProfile() const;
+    void SaveProfile(const string& filename) const;
+    void LoadProfile(const string& filename);
+
+private:
+    string name;
+    string email;
 };
 
 #endif // PROFILE_H
